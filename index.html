@@ -43,6 +43,10 @@
                         banner: "url('./assets/banner.png')",
                         formBg: "url('./assets/bg.jpg')",
                     },
+                    fontFamily:{
+                        Raleway: 'Raleway',
+                        Inter: 'Inter',
+                    },
                 },
             },
         }
@@ -105,6 +109,76 @@
         </ul>
     </nav>
 
+    <!-- <<<<Carrousel Section Start here>>>>>> -->
+        <div class="relative">
+            <div class="carousel w-full lg:h-[550px] h-[200px]">
+                <!-- <<<<<Carousel[01]>>>>> -->
+                <div id="slide1" class="carousel-item relative w-full">
+                  <img
+                    src="./images/banner.png"
+                    class="w-full" />
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide3" class="btn btn-circle bg-primary rounded-full">⯇⯇</a>
+                    <a href="#slide2" class="btn btn-circle bg-primary rounded-full">⯈⯈</a>
+                  </div>
+                </div>
+                <!-- <<<<<Carousel[02]>>>>> -->
+                <div id="slide2" class="carousel-item relative w-full lg:h-[550px] h-[200px]">
+                  <img
+                    src="./images/banner2.jpg"
+                    class="w-full rounded-2xl" />
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide1" class="btn btn-circle bg-primary rounded-full">⯇⯇</a>
+                    <a href="#slide3" class="btn btn-circle bg-primary rounded-full">⯈⯈</a>
+                  </div>
+                </div>
+                <!-- <<<<<Carousel[03]>>>>> -->
+                <div id="slide3" class="carousel-item relative w-full lg:h-[550px] h-[200px]">
+                  <img
+                    src="./images/banner3.jpeg"
+                    class="w-full rounded-2xl" />
+                  <div class="absolute left-5 right-5 top-1/2 flex -translate-y-1/2 transform justify-between">
+                    <a href="#slide2" class="btn btn-circle bg-primary rounded-full">⯇⯇</a>
+                    <a href="#slide1" class="btn btn-circle bg-primary rounded-full">⯈⯈</a>
+                  </div>
+                </div>
+                
+              </div>
+              <!-- <<<<<<Flowing Content>>>>> -->
+            <div class="bg-transparent text-white text-center  lg:w-2/3 rounded absolute  m-auto left-0 right-0 top-20 bottom-0 space-y-5 px-12 py-6">
+                <h1 class="text-5xl font-extrabold text-white">End-to-End Travel with<br>
+                    <span class="text=3xl text-lime-500">P </span>Paribahan</h1>
+                <p class="font-normal text-base">Yes, you can run unit tests and view the results directly within the app. The 
+                    integrated testing features allow for a streamlined . </p>
+                <button class="bg-primary  text-cyan-950 text-xl btn border-none rounded-3xl">Buy Ticket</button>
+            </div>
+    <!-- <<<<Carrousel Section End here>>>>>> -->
+         <div class="relative flex mb-20 gap-8 -top-14 z-20 px-10">
+            <!-- <<<<[item01]>>>> -->
+            <div class="  grid grid-cols-3 bg-yellow-100 shadow-lg rounded-2xl border-b-4 border-primary">
+                    <img class="p-8" src="./images/people.png" alt="">
+                <div class="py-8">
+                    <h1 class="text-3xl font-bold text-secondary">500k+</h1>
+                    <p class="text-lg font-normal">Registered Users</p>
+                </div>
+            </div>
+            <!-- <<<<[item02]>>>> -->
+            <div class="grid grid-cols-3  bg-yellow-100 shadow-lg rounded-2xl border-b-4 border-primary">
+                <img class="p-8" src="./images/ticket-cupon.png" alt="">
+                <div class="py-8">
+                    <h1 class="text-3xl font-bold text-secondary">1.7 lacks</h1>
+                    <p class="text-lg font-normal">Tickets sold</p>
+                </div>
+            </div>
+            <!-- <<<<[item03]>>>> -->
+            <div class="grid grid-cols-3  bg-yellow-100 shadow-lg rounded-2xl border-b-4 border-primary">
+                <img class="p-8" src="./images/stoppage.png" alt="">
+                <div class="py-8">
+                    <h1 class="text-3xl font-bold text-secondary">80K+</h1>
+                    <p class="text-lg font-normal">Rental partners</p>
+                </div>
+            </div>
+         </div>
     </header>
     
     <script src="JS/app.js"></script>
