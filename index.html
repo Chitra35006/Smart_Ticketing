@@ -1,11 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" data-theme="light">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Ticketing</title>
+
+    <!-- <<<<<Google Font>>>>> -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <!-- <<<<<Font Raleway>>>>> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+
+    <!-- <<<<<Font Inter>>>>> -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+
+     <!-- <<<<<<Font Awesome>>>>>> -->
+    <script src="https://kit.fontawesome.com/79659e1450.js" crossorigin="anonymous"></script>
+
+    <!-- <<<<<<<TailWind& Daisy Ui CDN>>>>>>> -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#7fda18',
+                        secondary: '#030712',
+                        couponOne: '#ffbf0f',
+                        couponTwo: '#f78c9c',
+                        mobileMenu: '#f7f8f8',
+                        body: '#03071299',
+                        buttonColor: '#477b0b ',
+                        bg1:'#E7C1D3',
+                        bg2:'#EFDA6E',
+                        bg3:'#A4DAC3',
+                        bg4:'#77AAEA',
+                        body_neutral: '#383754',
+                    },
+                    backgroundImage: {
+                        banner: "url('./assets/banner.png')",
+                        formBg: "url('./assets/bg.jpg')",
+                    },
+                },
+            },
+        }
+    </script>
+        
+
+
 </head>
 <body>
-    <h1>HIII</h1>
+    <!-- <<<<<<Header Section Start>>>>>> -->
+    <header class="w-11/12 mx-auto">
+     <!-- <<<<<Navigation Menu Content>>>>> -->
+    <nav class="flex justify-between items-center py-2 relative">
+        <div>
+            <p class=" font-bold text-2xl px-2"><span class="bg-primary  text-3xl">P</span>Ticket</p>
+        </div>
+        <ul class="sm:flex hidden gap-5">
+            <li>
+                <a class="font-semibold text-lg text-primary transition-colors duration-200 ease-in-out hover:bg-lime-200 hover:text-black p-2" href="#">Home</a>
+            </li>
+            <li>
+                <a class="font-semibold text-lg text-primary transition-colors duration-200 ease-in-out hover:bg-lime-200 hover:text-black p-2" href="#">About Us</a>
+            </li>
+            <li>
+                <a class="font-semibold text-lg text-primary transition-colors duration-200 ease-in-out hover:bg-lime-200 hover:text-black p-2" href="#">Destination</a>
+            </li>
+            <li>
+                <a class="font-semibold text-lg text-primary transition-colors duration-200 ease-in-out hover:bg-lime-200 hover:text-black p-2" href="#">Search</a>
+            </li>
+            <li>
+                <a class="font-semibold text-lg text-primary transition-colors duration-200 ease-in-out hover:bg-lime-200 hover:text-black p-2" href="#">Contact Us</a>
+            </li>
+        </ul>
+        <div class="flex items-center bg-lime-300 px-5 py-1 rounded-2xl text-2xl">
+            <button class="p-2 font-bold"><span>Bus</span>
+                <i class="fa-solid fa-van-shuttle text-primary"></i>
+            </button>
+            <button id="menu-btn" class="sm:hidden block">
+                <i class="fa-solid fa-bars sm:hidden block text-2xl bg-primary px-3 py-2 rounded"></i>
+                <i id="close-icon" class="fa-solid fa-xmark sm:block hidden  text-2xl bg-primary px-3 py-2 rounded"></i>
+            </button>
+        </div>
+        <!-- <<<<<Mobile Menu>>>>> -->
+        <ul id="mobileMenu" class="hidden flex-col absolute top-16 p-5 shadow-lg rounded-2xl bg-slate-200 text-center w-full mx-auto z-50">
+            <li class="hover:bg-primary py-2 rounded hover:text-secondary w-full">
+                <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">Home</a>
+            </li>
+            <li class="hover:bg-primary py-2 rounded hover:text-secondary w-full">
+                <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">About Us</a>
+            </li>
+            <li class="hover:bg-primary py-2 rounded hover:text-secondary w-full">
+                <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">Destination</a>
+            </li>
+            <li class="hover:bg-primary py-2 rounded hover:text-secondary w-full">
+                <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">Search</a>
+            </li>
+            <li class="hover:bg-primary py-2 rounded hover:text-secondary w-full">
+                <a class="font-semibold text-lg transition-colors duration-200 ease-in-out" href="#">Contact Us</a>
+            </li>
+        </ul>
+    </nav>
+
+    </header>
+    
+    <script src="JS/app.js"></script>
 </body>
 </html>
